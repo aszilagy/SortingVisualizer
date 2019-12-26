@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Sorting Website</title>
+  <meta name="description" content="Sorting">
+  <meta name="author" content="Alex">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body onload="loadGraph()">
+  <p id="arraySizeTitle">Size of Array</p>
+  <button class="btn btn-primary" id="sortButton">Sort</button>
+  <button class="btn btn-primary" id="shuffleButton" onClick="shuffleArray()">Shuffle</button>
+
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" id="sortSelector" type="button" data-toggle="dropdown">Sort Selection
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <a class="dropdown-item" onclick="shuffleArray()">Binary Sort</a>
+      <a class="dropdown-item" onclick="shuffleArray()">Quick Sort</a>
+      <a class="dropdown-item" onclick="shuffleArray()">Bubble Sort</a>
+      <a class="dropdown-item" onclick="shuffleArray()">Selection Sort</a>
+      <a class="dropdown-item" onclick="shuffleArray()">Insertion Sort</a>
+      <a class="dropdown-item" onclick="shuffleArray()">Heap Sort</a>
+    </ul>
+  </div>
+
+  <div id="arrayBox">
+	  <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">
+    </canvas>
+
+    <canvas id="textCanvas" width="500" height="50" style="border:1px solid #000000;"></canvas>
+
+  </div>
+
+  <div class="slidecontainer">
+      <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+      <p>Value: <span id="sliderValue"></span> </p>
+  </div>
+
+</body>
+  <script src="js/scripts.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</html>

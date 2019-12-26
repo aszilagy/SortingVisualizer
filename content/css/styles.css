@@ -1,0 +1,63 @@
+
+
+body{
+	background-color: #bf9090;
+
+}
+
+#textCanvas{
+  position: absolute;
+  left: 50px;
+  top: 625px;
+}
+
+#myCanvas{
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+
+#arraySizeTitle {
+	position: absolute;
+	left: 70px;
+	top: 25px;
+}
+
+.slidecontainer {
+  width: 130px; 
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+.verticle-line {
+  width: 5px;
+  min-height: 400px;
+  background: black;
+  margin: 4px;
+  position: absolute;
+  top: 120px;
+  left: 50px;
+}
+
+/* Button Navigation*/
+
+#sortSelector{
+  position: absolute;
+  left: 350px;
+  top: 50px;
+}
+
+#sortButton{
+	position: absolute;
+	left: 285px;
+	top: 50px;
+}
+
+#shuffleButton{
+  position: absolute;
+  left: 200px;
+  top: 50px;
+}
+
+/* Dropdown */
